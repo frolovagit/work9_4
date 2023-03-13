@@ -1,0 +1,527 @@
+/********** Отступ от границ **********/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/********** body **********/
+body {
+    font-family: Arial, Courier New, Arial, Helvetica, sans-serif;
+    color: rgb(63, 49, 64);
+}
+
+/*********** header **************/
+
+.header {
+    background: rgb(63, 49, 64);
+    color: rgb(226, 233, 243);
+    padding: 40px 0;
+}
+
+.wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: flex;
+    align-content: space-between;
+}
+
+.header-img {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.avatar {
+    border-radius: 100px;
+    border: 1px rgb(63, 49, 64);
+}
+
+.header-slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-grow: 3;
+    padding-left: 80px;
+}
+
+.header-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    color: rgb(226, 233, 243);
+    margin-bottom: 10px;
+}
+
+.header-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(226, 233, 243);
+}
+
+/********** main **********/
+.main {}
+
+/********** objective **********/
+.objective {
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.objective-wrap {}
+
+.objective-title {}
+
+.objective-text {
+    padding: 20px 0 0;
+}
+
+/********** experience **********/
+.experience {
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.experience-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.experience-items {
+    display: flex;
+}
+
+.experience-years {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 200px;
+    padding: 20px 0 0;
+}
+
+.exper-years {}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0 0;
+}
+
+.experience-subtitle {}
+
+.experience-text {
+    padding: 20px 0 0;
+}
+
+/********** skills **********/
+.skills {
+    padding-top: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.skills-wrap {}
+
+.skills-title {}
+
+.skills-text {
+    padding: 20px 0 0;
+}
+
+/********** language - section *********/
+.language {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.language-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-title {}
+
+.language-list {
+    padding: 20px 0 0;
+}
+
+.language-items {
+    list-style-position: outside;
+}
+
+.language-item {
+    line-height: 10px;
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+/*Маркеры списка*/
+.language-item::before {
+    content: "■";
+    /*Маркер Unicode*/
+    color: rgb(229, 214, 209);
+    /*Цвет маркера*/
+    padding-right: 10px;
+    /* Расстояние от маркера до текста */
+    font-size: 25px;
+    /* Размер маркера */
+    line-height: 20px;
+    /* Высота строки */
+}
+
+/* feedback */
+.feedback {
+    margin-bottom: 30px;
+}
+
+.feedback__container {
+    /* margin-bottom: 100px; */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    /* background: #f1f1f1f1; */
+    background-color: rgb(229, 214, 209);
+}
+
+.feedback-title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgb(63, 49, 64);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    /* background: #ddd; */
+    background-color: rgb(229, 214, 209);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: rgb(63, 49, 64);
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* Add a blue color to the author */
+.author {
+    /* color: rgb(63, 49, 64); */
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/* hobbies */
+.hobbies {
+    margin-bottom: 30px;
+}
+
+.hobbies__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#myVideo {
+    max-width: 1170px;
+    min-height: 300px;
+}
+
+.hobbies-content {
+    margin: 0 auto;
+    background: rgb(63, 49, 64);
+    color: #f1f1f1;
+    max-width: 1170px;
+    padding: 20px;
+}
+
+.hobbies-h2 {
+    padding-bottom: 10px;
+}
+
+.hobbies-p {
+    padding-bottom: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: rgb(229, 214, 209);
+    color: rgb(63, 49, 64);
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* form  */
+.form {
+    padding-top: 40px;
+    background-color: rgb(229, 214, 209);
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(63, 49, 64);
+    padding: 10px 0 0;
+}
+
+.form-input {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(63, 49, 64);
+    /* Параметры текста */
+    border: none;
+    /* Убираем рамку */
+    border-bottom: 2px solid rgb(191, 177, 174);
+    /* Линия снизу */
+    width: 400px;
+    height: 60px;
+    /* Размер поля */
+    background: transparent;
+    /* Прозрачный фон */
+    margin-bottom: 0px;
+}
+
+/* Добавляем эффект всплывающего плейсхолдера */
+input:focus {
+    outline: none;
+    /* Убираем контур */
+    border-bottom: 2px solid (191, 177, 174);
+    /* Линия снизу */
+}
+
+input::placeholder {
+    transition: 0.5s;
+    /* Время трансформации */
+    color: rgb(63, 49, 64);
+    /* Цвет подсказки */
+    font-family: Arial, Courier New, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    /* Изменение шрифта до установки курсора в поле */
+    font-weight: bold;
+    /* Параметры шрифта */
+}
+
+input:focus::placeholder {
+    font-size: 15px;
+    /* Изменение шрифта после установки курсора в поле */
+    transform: translateY(-16px);
+    /* Сдвигаем вверх */
+}
+
+/* message */
+.form-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-input-text {
+    font-family: Arial, Courier New, Arial, Helvetica, sans-serif;
+    text-align: start;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(63, 49, 64);
+    /*Параметры шрифта*/
+    outline: none;
+    border: none;
+    /* Убираем рамку */
+    border-bottom: 2px solid rgb(191, 177, 174);
+    /* Линия снизу */
+    background: transparent;
+    /* Прозрачный фон */
+    width: 800px;
+    height: 40px;
+    /*Размер поля*/
+    resize: none;
+    /*запрет изменения размеров поля*/
+    margin-bottom: 30px;
+}
+
+/* button */
+.button {
+    background-color: rgb(63, 49, 64);
+    /*Цвет фона*/
+    color: rgb(255, 255, 255);
+    /*Цвет шрифта*/
+    font-size: 15px;
+    /*Размер шрифта*/
+    width: 160px;
+    height: 35px;
+    /*Размер кнопки*/
+    margin-bottom: 40px;
+}
+
+.button-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+/*Смена цвета текста при наведении на кнопку*/
+.button:hover {
+    color: rgb(191, 177, 174);
+}
+
+/*Смена цвета текста при смещении фокуса на кнопку*/
+.button:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px rgb(255, 255, 255);
+}
+
+/*Смена цвета при нажатии на кнопку*/
+.button:active {
+    background-color: rgb(191, 177, 174);
+}
+
+/********** footer **********/
+.footer {
+    background-color: rgb(63, 49, 64);
+    color: rgb(226, 233, 243);
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* contacts */
+.contacts-title {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.contacts-list {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.contacts-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contacts-item {}
+
+/*Первоначальное состояние ссылки*/
+.contacts-link:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*Смена цвета ссылки при наведении курсора*/
+.contacts-link:hover {
+    color: rgb(191, 177, 174);
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: smaller;
+    color: rgb(191, 177, 174);
+    padding-bottom: 15px;
+}
